@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosdellogin.css">
+</head>
+<body>
+    <main>
+        
+        <div class="contenedor-todo">
+            <div class="caja-trasera">
+                <div class="caja-trasera-login">
+                    <h3>Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar a la página</p>
+                    <button id="btn__sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja-trasera-registro">
+                    <h3>Aún NO tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarme</button>
+                </div>
+            </div>
+            
+            <div class="contenedor-login-registro">
+                <!-- Formulario de inicio de sesión -->
+                <form action="" class="formulario-login" id="loginForm">
+                    <h2>Iniciar sesión</h2>
+                    <input type="text" placeholder="Correo electrónico" id="loginEmail" required>
+                    <input type="password" placeholder="Contraseña" id="loginPassword" required>
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!-- Formulario de registro -->
+                <form action="" class="formulario-registro" id="registroForm">
+                    <h2>Registrarme</h2>
+                    <input type="text" placeholder="Nombre completo" id="registronombre" required>
+                    <input type="text" placeholder="Correo electrónico" id="registroEmail" required>
+                    <input type="text" placeholder="Usuario" id="registroUsuario" required>
+                    <input type="password" placeholder="Contraseña" id="registroPassword" required>
+                    <input type="text" placeholder="Género (F, M)" id="registroGenero" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+       <div class="contenedor-footer">
+             <a href="index.html" class="btn-volver-inicio">VOLVER AL INICIO</a>
+       </div>
+    </footer>
+
+    <script src="scriptLogin.js"></script>
+</body>
+</html>

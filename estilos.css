@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #faf8f8;
+    padding: 10px 20px;
+    color: white;
+
+.buscar {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        flex-grow: 1; 
+        
+}
+/*mejorar*/
+.buscar input input[type="text"]{
+    padding: 10px;
+    height: 42px; /* Igualar altura al botón "Iniciar Sesión" */
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Bordes redondeados solo en la izquierda */
+    outline: none;
+    margin-right: -1px;
+
+}
+.buscar button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buscar button:hover {
+    background-color: #0056b3;
+}
+
+}
+.sesion-button {
+    background-color: #285fa7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.sesion-button:hover {
+    background-color: #218838;
+}
+/* resena */
+
+.reviews-section {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.review-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+    text-align: right;
+}
+
+.footer {
+    background-color: rgb(5, 5, 5);
+    color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+
+}
+.container a {
+    color: rgb(250, 248, 248);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.container a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.banner{
+    text-align: center;
+}
+
