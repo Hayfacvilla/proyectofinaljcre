@@ -11,11 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = document.getElementById("loginEmail").value;
         const password = document.getElementById("loginPassword").value;
 
-        // Guardar los valores en el localStorage
-        localStorage.setItem("loginEmail", email);
-        localStorage.setItem("loginPassword", password);
+        // Obtener los datos guardados en localStorage
+        const storedUser = localStorage.getItem("user");
 
-        alert("Datos de inicio de sesión guardados en localStorage");
+        // Verificar si los datos coinciden
+        if (storedUser) {
+            const user = JSON.parse(storedUser);
+            // Si el email y la contraseña coinciden, redirigir a usuario.html
+            if (user.email === email && user.password === password) {
+                window.location.href = "paginaUsuario.html"; // Redirige a la página de usuario
+
+            } else {
+                alert("Datos incorrectos. Intenta de nuevo.");
+            }
+        } else {
+            alert("No se ha encontrado ningún usuario registrado.");
+        }
     });
 
     // Manejar el formulario de registro
@@ -41,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Guardar el objeto en el localStorage como un string JSON
         localStorage.setItem("user", JSON.stringify(user));
 
-        alert("Datos de registro guardados en localStorage");
+        // Redirigir al formulario de inicio de sesión sin mensaje
+        window.location.href = "login.html"; // Cambiar esta URL al formulario de login
     });
 });

@@ -11,7 +11,7 @@ var caja_trasera_regirtro= document.querySelector(".caja-trasera-regirtro");
 
 
 
-function iniciarSesion(){
+function iniciarSesion(){ 
 
 
     formulario_registro.style.display ="none";

@@ -7,11 +7,11 @@
 
 }
 body{
-    background-image: url(https://th.bing.com/th/id/OIP.vXk563GFXeEQ8vuKn7eHtwHaE8?rs=1&pid=ImgDetMain);
+    background-image: url(imagenes/imagencrot2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 main{
     width: 100%;
@@ -32,7 +32,7 @@ main{
     
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: rgb(0, 120, 255, 0.5);
+    background-color: #ff007f;
 
 }
 
@@ -63,7 +63,7 @@ main{
 }
 .caja-trasera button:hover{
     background: #fff;
-    color: blue;
+    color: #ff007f;
 }
 /*formularios*/
 
@@ -91,7 +91,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #46a2fd;
+    color:#ff007f;
 }
 
 .contenedor-login-registro form input{
@@ -108,10 +108,16 @@ main{
     margin-top: 40px;
     border: nane;
     font-size: 14px;
-    background: #46a2fd;
-    color: #fcfbfd;
+    background:#ff007f;
+    color: #070104;
     outline: none;
 }
+.contenedor-login-registro form button:hover{
+    background-color: aliceblue;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
 .formulario-login{
     opacity: 1;
     display: block ;
@@ -169,7 +175,7 @@ footer {
 
 .btn-volver-inicio {
     padding: 10px 20px;
-    background-color: #46a2fd; 
+    background-color:#ff007f; 
     color: #e0e0e0;
     border: none;
     border-radius: 5px; 
@@ -179,6 +185,6 @@ footer {
 }
 
 .btn-volver-inicio:hover {
-    background-color: #005bb5; 
+    background-color: #ff007f; 
     transform: scale(1.05); 
 }

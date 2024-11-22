@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuaruio - Mar de Puntadas</title>
+    <link rel="stylesheet" href="estilosUsuario.css">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">mar <span style="color: #ff007f;">DePuntadas</span></a>
+        </div>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar en productos...">
+            <button>
+                <img src="https://img.icons8.com/material-rounded/24/000000/search.png" alt="Buscar">
+            </button>
+        </div>
+        <ul class="menu">
+            <li><a href="#">trajes de baño</a></li>
+            <li><a href="#">top</a></li>
+            <li><a href="#">mallas</a></li>
+            <li><a href="#">conjuntos</a></li>
+            <li><a href="#">Amicrumis</a></li>
+        </ul>
+        <div class="acciones">
+            <div id="auth-section">
+                <!-- Aquí se mostrará el nombre del usuario o un espacio vacío -->
+            </div>
+        </div>
+    </nav>
+
+  
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const authSection = document.getElementById("auth-section");
+
+    // Verifica si el usuario está almacenado en localStorage
+    const usuario = localStorage.getItem("usuario");
+
+    if (usuario) {
+        // Si hay un usuario registrado, muestra su nombre y un botón de cerrar sesión
+        authSection.innerHTML = `
+            <div class="user-info">
+                <span>Hola, ${usuario}</span>
+                <button class="logout-btn" id="logout-btn">Cerrar sesión</button>
+            </div>
+        `;
+
+        // para cerrar sesión
+        const logoutBtn = document.getElementById("logout-btn");
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("usuario"); // Elimina el usuario de localStorage
+            window.location.href = "index.html"; // Redirige al index.html
+        });
+
+    } else {
+        // Si no hay usuario registrado, deja el espacio vacío
+        authSection.innerHTML = `<span></span>`;
+    }
+});
+
+</script>
+    
+
+    <section class="products">
+        <h2>Nuestros Productos</h2>
+        <div class="product-gallery">
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+          
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            <div class="product-item">
+                <img src="imagenes/imagenc1.jpg" alt="Traje de baño a crochet" class="product-image">
+                <h3>Traje de baño a crochet</h3>
+                <p>Hecho a mano con materiales de alta calidad, disponible en varios colores.</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/imagenc2.jpg" alt="Bikini a crochet" class="product-image">
+                <h3>Bikini a crochet</h3>
+                <p>Bikini exclusivo, cómodo y perfecto para el verano.</p>
+            </div>
+      
+            <div class="product-item">
+                <img src="imagenes/imagenc3.jpg" alt="Top a crochet" class="product-image">
+                <h3>Top a crochet</h3>
+                <p>Top a crochet, ideal para combinar con cualquier prenda de verano.</p>
+            </div>
+         
+            <div class="product-item">
+                <img src="imagenes/imanc4.jpg" alt="Pareo a crochet" class="product-image">
+                <h3>Pareo a crochet</h3>
+                <p>Perfecto para la playa o piscina, hecho a mano con delicadeza.</p>
+            </div>
+            
+            
+        </div>
+     
+       
+    </section>
+    
+
+   
+
+   
+
+    <footer class="footer">
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div class="container">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 Mar de Puntadas. Todos los derechos reservados.</p>
+    </footer>
+
+   
+</body>
+</html>
